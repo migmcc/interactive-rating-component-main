@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    /* background-color: var(--col-Very-Dark-Blue); */
+}
+
+/* Colors */
+
+:root {
+    --col-Orange: hsl(25, 97%, 53%);
+    --col-White: hsl(0, 0%, 100%);
+    --col-Light-Grey: hsl(217, 12%, 63%);
+    --col-Medium-Grey: hsl(216, 12%, 54%);
+    --col-Dark-Blue: hsl(213, 19%, 18%);
+    --col-Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 40%;
+    height: 35%;
+    background-color: var(--col-Very-Dark-Blue);
+    color: var(--col-White);
+    border-radius: 20px;
+    padding: 35px;
+}
+.active {
+    display: none;
+}
+.circle {
+    background-color: var(--col-Dark-Blue);
+    padding: 2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.container .img {
+    margin-bottom: 25px;
+}
+.container h1 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.container p {
+    font-size: 15px;
+    color: var(--col-Light-Grey);
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+.rating {
+    margin-bottom: 25px;
+}
+.rating ul {
+    display: flex;
+    justify-content: space-between;
+}
+.rating ul li {
+    cursor: pointer;
+}
+.rating ul li a {
+    color: var(--col-Light-Grey);
+}
+.container button {
+    width: 100%;
+    background-color: var(--col-Orange);
+    color: var(--col-White);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    height: 55px;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+}
+
+/* thank you card */
+
+.container-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-b img {
+    margin-bottom: 30px;
+}
+.container-b .reply {
+    background-color: var(--col-Dark-Blue);
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 8px;
+    border-radius: 30px;
+}
+.container-b .reply p {
+    color: var(--col-Orange)
+}
+.container-b h1 {
+    font-weight: 700;
+}
+.container-b p {
+    line-height: 25px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+}
